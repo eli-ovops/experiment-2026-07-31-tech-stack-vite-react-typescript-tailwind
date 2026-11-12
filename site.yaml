@@ -1,0 +1,35 @@
+site:
+  id: biological-age-dashboard
+  project: Biological Age Dashboard
+  level: L0
+  status: local-demo
+  owner: user
+  developer: Codex
+environments:
+  local:
+    public_url: http://127.0.0.1:5173
+  preview: TBD
+  production: TBD
+repository:
+  url: TBD
+  approved_branch: TBD
+  production_branch: main
+architecture:
+  type: static
+  frontend: Vite + React + TypeScript + Tailwind CSS
+toolchain:
+  node: ">=20.19.0"
+  package_manager: npm@10.8.2
+  lockfile: package-lock.json
+release:
+  publisher: TBD
+  health_check: TBD
+  rollback: TBD
+storage:
+  database: none
+  media: remote-user-provided-assets
+boundaries:
+  backend: out-of-scope
+  authentication: out-of-scope
+  deployment: not-authorized
+  production_data: none
